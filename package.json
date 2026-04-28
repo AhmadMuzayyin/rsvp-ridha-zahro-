@@ -1,0 +1,17 @@
+{
+  "name": "undangan-pernikahan-ridha-zahro'",
+  "version": "1.0.0",
+  "description": "Website undangan pernikahan Ridha & Zahro'",
+  "scripts": {
+    "build": "echo 'No build needed for static files'",
+    "deploy": "vercel"
+  },
+  "keywords": [
+    "pernikahan",
+    "undangan",
+    "ridha",
+    "zahro'"
+  ],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan – Ridha & Zahro'</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(160deg, #0d2418 0%, #1A3C2E 45%, #0d2418 100%);
+            font-family: 'Lato', sans-serif;
+            color: #FAF6EE;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+        }
+
+        .cover-bismillah {
+            font-family: 'Amiri', serif;
+            font-size: 2rem;
+            color: #C9A84C;
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 12px rgba(201, 168, 76, .4);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: #C9A84C;
+            margin: 1rem 0 0.5rem;
+            font-style: italic;
+        }
+
+        .subtitle {
+            font-family: 'Amiri', serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.15em;
+            color: #E8D49A;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+
+        .divider {
+            width: 120px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+            margin: 0 auto 3rem;
+        }
+
+        .links-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, .05);
+            border: 1.5px solid rgba(201, 168, 76, .3);
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #FAF6EE;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+        }
+
+        .card:hover {
+            border-color: rgba(201, 168, 76, .6);
+            box-shadow: 0 0 30px rgba(201, 168, 76, .15);
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, .08);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #C9A84C;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-date {
+            font-size: 0.85rem;
+            color: rgba(232, 212, 154, .7);
+            margin-bottom: 1rem;
+        }
+
+        .card-button {
+            display: inline-block;
+            background: #C9A84C;
+            color: #1A3C2E;
+            padding: 0.6rem 1.8rem;
+            border-radius: 100px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .card:hover .card-button {
+            background: #E8D49A;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(201, 168, 76, .2);
+            font-size: 0.85rem;
+            color: rgba(232, 212, 154, .6);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                margin: 0.5rem 0;
+            }
+
+            .links-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cover-bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+        <h1>Ahmad & Fatimah</h1>
+        <p class="subtitle">Undangan Pernikahan</p>
+        <div class="divider"></div>
+
+        <p style="font-size: 1rem; margin-bottom: 2rem; color: rgba(232, 212, 154, 0.8);">
+            Dengan penuh kebahagiaan, kami mengundang Anda untuk menjadi bagian dari hari istimewa kami
+        </p>
+
+        <div class="links-container">
+            <a href="/hari-h" class="card">
+                <div class="card-icon">💍</div>
+                <div class="card-title">Akad Nikah</div>
+                <div class="card-date">Sabtu, 15 Mei 2024</div>
+                <div class="card-button">Buka Undangan</div>
+            </a>
+
+            <a href="/pra-acara" class="card">
+                <div class="card-icon">🎉</div>
+                <div class="card-title">Walimah</div>
+                <div class="card-date">Minggu, 16 Mei 2024</div>
+                <div class="card-button">Buka Undangan</div>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+            <p style="margin-top: 0.5rem;">© 2024 Ahmad & Fatimah</p>
+        </div>
+    </div>
+</body>
+
+</html>
