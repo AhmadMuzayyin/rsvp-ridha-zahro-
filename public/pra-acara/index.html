@@ -132,13 +132,12 @@
 
         .scroll-hint {
             position: absolute;
-            top: 44rem;
-            left: 35%;
+            bottom: 1rem;
+            left: 50%;
             transform: translateX(-50%);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             gap: .4rem;
             opacity: 0;
             animation: fadeUp .8s 1.8s forwards;
@@ -499,146 +498,203 @@
                 grid-template-columns: 1fr;
             }
 
-            .scroll-hint {
-                top: 42rem;
-                left: 50%;
+            .and-symbol {
+                font-size: 1.8rem;
+            }
+
+            .event-row {
+                flex-direction: column;
+                gap: .4rem;
             }
         }
     </style>
 </head>
 
 <body>
+
+    <!-- ══════════════════ COVER ══════════════════ -->
     <div class="cover">
-        <div class="cover-badge">Dengan Hormat Mengundang</div>
-        <div class="cover-bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+        <div class="cover-badge">Undangan Walimatul 'Ursy</div>
+
+        <div class="cover-bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
         <div class="cover-divider"></div>
-        <svg class="couple-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="coupleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#C9A84C;stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:#E8D49A;stop-opacity:0.6" />
-                </linearGradient>
-            </defs>
-            <circle cx="85" cy="100" r="30" fill="url(#coupleGrad)" opacity="0.3" />
-            <circle cx="215" cy="100" r="30" fill="url(#coupleGrad)" opacity="0.3" />
-            <path d="M 70 140 Q 85 200 85 250" stroke="url(#coupleGrad)" stroke-width="3" fill="none" opacity="0.5" />
-            <path d="M 230 140 Q 215 200 215 250" stroke="url(#coupleGrad)" stroke-width="3" fill="none"
-                opacity="0.5" />
-            <line x1="100" y1="150" x2="200" y2="150" stroke="url(#coupleGrad)" stroke-width="2" opacity="0.4" />
-        </svg>
-        <h1 class="cover-names">Ahmad<br /><span>&</span><br />Fatimah</h1>
-        <p class="cover-subtitle">Pernikahan</p>
-        <p class="cover-subtitle" style="opacity: 0; animation: fadeUp .8s 1.5s forwards;">Walimah</p>
+
+        <!-- Couple SVG Cartoon -->
+        <img class="couple-svg" src="../media/kartun.png" />
+
+        <div class="cover-names">Ridha<br /><span>&</span><br />Zahro'</div>
+        <div class="cover-subtitle">Mengundang Anda ke Acara Walimah Kami</div>
+
         <div class="scroll-hint">
-            <span>Scroll</span>
             <div class="scroll-arrow"></div>
         </div>
     </div>
 
-    <section class="ayat-section reveal">
-        <div class="ornament-top">✦</div>
-        <p class="arabic-text">وَكُلُوا وَاشْرَبُوا وَلَا تُسْرِفُوا</p>
-        <p class="ayat-translation">"Dan makanlah dan minumlah, dan jangan berlebih-lebihan..."</p>
-        <p class="ayat-ref">QS. Al-A'raf: 31</p>
-        <div class="ornament-bottom">✦</div>
+    <!-- ══════════════════ AYAT ══════════════════ -->
+    <section class="reveal">
+        <div class="ornament-top">❧</div>
+        <div class="section-label">Firman Allah Ta'ala</div>
+        <div class="ayat-section">
+            <div class="arabic-text">
+                وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ
+                بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+            </div>
+            <div class="full-divider"></div>
+            <br />
+            <p class="ayat-translation">
+                "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu
+                sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih
+                dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang
+                berpikir."
+            </p>
+            <br />
+            <p class="ayat-ref">— QS. Ar-Rum : 21 —</p>
+        </div>
+        <div class="ornament-bottom">❧</div>
     </section>
 
+    <!-- ══════════════════ COUPLE ══════════════════ -->
     <section class="couple-section reveal">
-        <div class="ornament-top">✦</div>
-        <p class="section-label">Mempelai Wanita & Pria</p>
+        <div class="section-label">Bismillah, Kami Berdo'a</div>
+        <h2
+            style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--gold-light);font-style:italic;font-weight:400;line-height:1.7;">
+            Dengan memohon ridho Allah Subhanahu Wa Ta'ala,<br />
+            kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri<br />
+            tasyakuran pernikahan putra-putri kami
+        </h2>
+
         <div class="couple-grid">
             <div class="person-card">
-                <p class="person-role">Mempelai Wanita</p>
-                <p class="person-name">Fatimah</p>
-                <p class="person-parents">Putri dari<br />Bapak Hasan & Ibu Aisha</p>
+                <div class="person-name">Ali Ridha S.</div>
+                <div class="person-parents">Putra kedua dari<br />Bpk. Moh. Saleh & Ibu Zubaidah</div>
             </div>
             <div class="and-symbol">&</div>
             <div class="person-card">
-                <p class="person-role">Mempelai Pria</p>
-                <p class="person-name">Ahmad</p>
-                <p class="person-parents">Putra dari<br />Bapak Karim & Ibu Maryam</p>
+                <div class="person-name">Fatimatuz Zahro'</div>
+                <div class="person-parents">Putri kedua dari<br />Bpk. Abd. Hamid Anang & Ibu Zubaidiyah</div>
             </div>
         </div>
-        <div class="ornament-bottom">✦</div>
     </section>
 
+    <!-- ══════════════════ EVENT (PRE-WEDDING) ══════════════════ -->
     <section class="event-section reveal">
-        <div class="ornament-top">✦</div>
-        <p class="section-label">Acara Walimah</p>
-        <div class="event-type-badge">Acara Resepsi</div>
+        <div class="section-label">Detail Acara</div>
+        <div style="text-align:center;margin-bottom:1rem;">
+            <span class="event-type-badge">📅 Undangan Pra-Hari H</span>
+        </div>
+
         <div class="event-card">
-            <p class="event-name">Walimah (Resepsi)</p>
+            <div class="event-name">Pengajian & Do'a Bersama</div>
             <div class="event-details">
                 <div class="event-row">
-                    <div class="event-icon">📅</div>
+                    <div class="event-icon">📆</div>
                     <div class="event-info">
-                        <label>Tanggal</label>
-                        <strong>Minggu, 16 Mei 2024</strong>
+                        <label>Hari & Tanggal</label>
+                        <!-- ✏️ EDIT: Ganti hari dan tanggal -->
+                        <strong>Jumat, 29 Mei 2026</strong>
                     </div>
                 </div>
                 <div class="event-row">
                     <div class="event-icon">🕐</div>
                     <div class="event-info">
                         <label>Waktu</label>
-                        <strong>10:00 - 16:00 WIB</strong>
+                        <!-- ✏️ EDIT: Ganti waktu -->
+                        <strong>18:30 WIB – Selesai (Ba'da Sholat Isya')</strong>
+                        <p>Mohon hadir tepat waktu</p>
                     </div>
                 </div>
                 <div class="event-row">
                     <div class="event-icon">📍</div>
                     <div class="event-info">
-                        <label>Lokasi</label>
-                        <strong>Ballroom Emerald</strong>
-                        <p>Jl. Merdeka No. 123, Jakarta Selatan</p>
+                        <label>Tempat</label>
+                        <!-- ✏️ EDIT: Ganti nama & alamat tempat -->
+                        <strong>Rumah Mampelai Pria</strong>
+                        <p>Dusun Laok Songai, Desa Billapora Barat, Kecamatan Ganding</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- ══════════════════ CLOSING ══════════════════ -->
+    <section class="closing-section reveal">
+        <div class="ornament-top">✦</div>
+        <br />
+        <p class="closing-text">
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami<br />
+            apabila Bapak / Ibu / Saudara / i berkenan hadir<br />
+            untuk memberikan do'a restu kepada kedua mempelai.
+        </p>
+        <br />
+        <p style="font-family:'Amiri',serif;font-size:1.1rem;color:var(--gold);margin-bottom:.5rem;">
+            جَزَاكُمُ اللَّهُ خَيْرًا
+        </p>
+        <p style="font-size:.8rem;color:rgba(232,212,154,.6);margin-bottom:1.5rem;">Jazākumullāhu khayran</p>
+        <div class="full-divider"></div>
+        <br />
+        <div class="footer-names">Ridha & Zahro'</div>
+        <div class="footer-note">beserta keluarga besar</div>
+        <br />
         <div class="ornament-bottom">✦</div>
     </section>
 
-    <section class="closing-section reveal">
-        <div class="ornament-top">✦</div>
-        <p class="closing-text">"Terima kasih telah menjadi bagian dari kebahagiaan kami. Semoga acara ini penuh berkah
-            dan kebersamaan."</p>
-        <div class="full-divider"></div>
-        <p class="footer-names">Ahmad & Fatimah</p>
-        <p class="footer-note">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
-    </section>
+    <!-- ══════════════════ MUSIC PLAYER ══════════════════ -->
+    <!-- Audio autoplay – ganti src dengan URL MP3 sholawat/nasyid -->
+    <audio id="bgMusic" loop>
+        <!-- ✏️ EDIT: Ganti URL di bawah dengan file MP3 sholawat pilihan Anda -->
+        <!-- Contoh: <source src="https://example.com/sholawat.mp3" type="audio/mpeg"> -->
+        <!-- Untuk demo, menggunakan nada bebas hak cipta dari Free Music Archive -->
+        <source src="../media/music.mp3" type="audio/mpeg">
+    </audio>
 
     <div class="music-bar">
-        <button class="music-btn" onclick="toggleMusic()">
-            <span class="music-note">♫</span>
+        <button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="Play/Pause Musik">
+            ▶
         </button>
-        <span class="music-label">Musik</span>
     </div>
 
-    <audio id="bgMusic" src="../music.mp3" loop></audio>
-
     <script>
-        let isPlaying = false;
-
-        function toggleMusic() {
-            const audio = document.getElementById('bgMusic');
-            if (isPlaying) {
-                audio.pause();
-                isPlaying = false;
-            } else {
-                audio.play();
-                isPlaying = true;
-            }
-        }
-
+        // ── Scroll reveal ──
         const reveals = document.querySelectorAll('.reveal');
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        reveals.forEach(r => observer.observe(r));
 
-        reveals.forEach(reveal => observer.observe(reveal));
+        // ── Music player ──
+        const audio = document.getElementById('bgMusic');
+        const btn = document.getElementById('musicBtn');
+        const note = document.getElementById('musicNote');
+        let playing = false;
+
+        // Auto-play on first user interaction
+        document.addEventListener('click', () => {
+            if (!playing) { tryPlay(); }
+        }, { once: true });
+
+        // Also try auto-play immediately (browsers may allow it)
+        window.addEventListener('load', () => {
+            audio.volume = 0.5;
+            audio.play().then(() => { playing = true; updateBtn(); }).catch(() => { });
+        });
+
+        function tryPlay() {
+            audio.volume = 0.5;
+            audio.play().then(() => { playing = true; updateBtn(); }).catch(e => console.warn('Autoplay blocked', e));
+        }
+
+        function toggleMusic() {
+            if (playing) { audio.pause(); playing = false; }
+            else { audio.play(); playing = true; }
+            updateBtn();
+        }
+
+        function updateBtn() {
+            btn.textContent = playing ? '⏸' : '▶';
+            note.style.display = playing ? 'inline' : 'none';
+        }
     </script>
+
 </body>
 
 </html>
